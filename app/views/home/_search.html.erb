@@ -1,0 +1,10 @@
+<table class="table-bordered col-lg-12">
+<%# abort @search.to_yaml%>
+	<% @search.each do |f|%>
+		<tr>
+			<td><%= f.subject%></td>
+			<td><%= f.title%></td>
+			<td><button><%= link_to 'Download',f.file.url, :target=>'_blank' ,:download=>true%></button></td>
+		</tr>
+	<%end%>
+</table>
