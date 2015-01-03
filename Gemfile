@@ -4,9 +4,9 @@ ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.rc1'
 # Use mysql as the database for Active Record
-#gem 'mysql2'
+
 group :development, :test do
- gem 'sqlite3','1.3.9'
+ gem 'mysql2'
 end
 group :production do
     gem 'pg',    '0.15.1'
