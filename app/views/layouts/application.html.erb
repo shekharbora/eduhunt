@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>        
         <%= yield :javascript_includes %>
 </head>
-<body>
+<body style="background-color:#270BEE;">
  <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -55,7 +55,9 @@
         </div>
         <!-- /.container -->
     </nav>
-<%= yield %>
+    <div style="margin-top:100px;">
+        <%= yield %>
+     </div>
 <footer class="footer">
             <div class="row">
                 <div class="col-lg-12">
