@@ -12,7 +12,7 @@ group :production do
     gem 'pg',    '0.15.1'
     gem 'rails_12factor',"0.0.2"
 end
-
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'devise', '~> 3.4.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0'
