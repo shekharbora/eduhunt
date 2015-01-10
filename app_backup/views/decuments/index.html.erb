@@ -1,0 +1,39 @@
+<div class="container">
+<div class="row">
+<div class="cal-lg-12" style="background: #fff;padding: 34px;">
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Decuments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Title</th>
+      <th>File</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @decuments.each do |decument| %>
+      <tr>
+        <td><%= decument.subject %></td>
+        <td><%= decument.title %></td>
+        <td><%= decument.file %></td>
+        <td><%= decument.description %></td>
+        <td><%= link_to 'Show', decument %></td>
+        <td><%= link_to 'Edit', edit_decument_path(decument) %></td>
+        <td><%= link_to 'Destroy', decument, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Decument', new_decument_path %>
+</div>
+</div>
+</div>
